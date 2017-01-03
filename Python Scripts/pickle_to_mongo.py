@@ -21,7 +21,7 @@ tweetCollection.drop()
 for t in tweets:
     tweetCollection.insert_one(t)
 
-weatherCollection = db.weather
+weatherCollection = db.weather_dt
 weatherCollection.drop()
 for w in weather:
     weatherCollection.insert_one(w)
