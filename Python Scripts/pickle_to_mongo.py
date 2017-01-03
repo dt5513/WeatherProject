@@ -1,8 +1,8 @@
 import pymongo
 import pickle
 
-tweetPath = 'C:\MetOfficeProject\\tweets_wt.pickle'
-weatherPath = 'C:\MetOfficeProject\\weather_wt.pickle'
+tweetPath = 'C:\Users\Student17\Desktop\Weather Final\data\\tweets_wt.pickle'
+weatherPath = 'C:\Users\Student17\Desktop\Weather Final\data\\weather_wt.pickle'
 
 connection = pymongo.MongoClient("mongodb://localhost")
 
@@ -21,7 +21,7 @@ tweetCollection.drop()
 for t in tweets:
     tweetCollection.insert_one(t)
 
-weatherCollection = db.weather
+weatherCollection = db.weather_dt
 weatherCollection.drop()
 for w in weather:
     weatherCollection.insert_one(w)
