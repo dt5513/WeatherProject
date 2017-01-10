@@ -1,8 +1,8 @@
 import pymongo
 import pickle
 
-tweetPath = 'C:\Users\Student17\Desktop\Weather Final\data\\tweets_wt.pickle'
-weatherPath = 'C:\Users\Student17\Desktop\Weather Final\data\\weather_wt.pickle'
+tweetPath = 'C:\MetOfficeProject\\tweets_wt.pickle'
+weatherPath = 'C:\MetOfficeProject\\weather_wt.pickle'
 
 connection = pymongo.MongoClient("mongodb://localhost")
 
