@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+
+    
+<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\normalize.css">
+<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\common.css">
+<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\twitt.css">
+
+
+    
 <title>Tweets Website</title>
 </head>
-<body>
-<p>
-Welcome {{username}}!
-<p>
+<body bgcolor="#F9ECD8">
+<div class = "TopBar">
+    <b>yo</b>
+    <div class = "TopImg">
+        <img src="http://i.imgur.com/oaRAe98.jpg">
+      
+        </div>
+     </div> 
+    <p>
+Welcome {{username}}!{{img}}
+    <p>
 <ul>
 %for thing in things:
 <li>{{thing}}</li>
@@ -19,3 +35,4 @@ What word to search for?
 </form>
 </body>
 </html>
+
