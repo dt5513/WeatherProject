@@ -5,11 +5,24 @@ Files and details used in this project can be found at https://github.com/rachae
 
 
 
+
+
 The first 2 graphs show the proportions of words in tweets for each weather type. The pie chart shows the percentages of each weather word in the tweets collected. The stacked bar chart demonstrates the same thing but over datetime. From our tweets we can conclude that over the time period, fog and rain were the most tweeted about weather types. 
 
 The third graph shows the weather predictions made by the MetOffice for 'Foggy', 'Cloudy', 'Rain' and 'Sunny' weather types. From this graph it can be seen that it was mostly cloudy but very little rain and fog. The opposing results between Twitter and the MetOffice is most likely to be because Twitter users and the MetOffice have very different interpretations of the weather.
 
 
+
+
+
+The 4 graphs below show the accuracy of the MetOffice data (see the README file in our GitHub repository to see how the accuracy was calculated) vs. the factor (see README file) of tweets collected for the corresponding weather type. The 'Sunny' graph shows a correlation between the two variables. On the whole, when it was predicted to be sunny by the MetOffice, people were also tweeting about the weather being sunny. The 'Cloudy' graph also shows a correlation. Both sets of data follow a similar pattern although some peaks/troughs increase/decrease at different rates. There is a slight correlation for rain. Both sets of data have the same peak and follow a general pattern. However, tweets have must larger rates of change between data points. Finally, the fog graph shows not much of a correlation. It can be seen that people tweet about the fog  much more than it is predicted by the MetOffice.
+
+
+
+
+
+Two further graphs were produced between data we thought would have a correlation. 'The number of cold words in tweets and the temperature' graph shows a strong negative correlation between total cold words in tweets and the temperature as predicted by the MetOffice. This is because as the temperature drops, more people are likely to tweet about the cold weather. Interestingly, the temperature always feels colder than it actually is.
+'The total rain words in tweets and the precipitation probability' graph shows that an increase in the precipitation probability will generally be followed by a high value for the total rain words in tweets. This is because the precipitation probability is directly related to the rain which causes people to tweet about it.  
 
 
 
