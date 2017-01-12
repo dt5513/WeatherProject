@@ -1,3 +1,7 @@
+
+
+
+
 .TopRight{
     float: right;
     text-align: right; 
@@ -50,6 +54,14 @@ ul li {
     font-family: Arial, Helvetica, sans-serif;
 
 }
+
+
+.graphsButt {
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
 .TopImg {
     max-width: 1000px;
     margin-left: auto;
@@ -83,4 +95,55 @@ input[type=text]
     width: 560px;
     text-align: left;
     text-indent: 10px;
+}
+
+.graphsMain{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    clear:both;
+    text-align: center;
+}
+.secondGraphRow{
+     clear:both;
+     margin-left: auto;
+    margin-right: auto;
+}
+.doubleGraphs{
+    clear:both;
+     margin-left: auto;
+    margin-right: auto;
+}
+.doubleGraphCont{
+    width: 49%;
+    clear: none;
+}
+
+.graphLeft{
+    float: left;
+}
+.graphRight{
+    float: right;
+}
+.textSqueeze{
+    text-align: left;
+    clear:both;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 15px;
+   
+}
+.firstGraph{
+    float:right;
+    width: 49%;
+    
+}
+.firstRowText{
+    padding-left: 100px;
+    float:left;
+    width: 49%;
+    padding-top: 50px;
+    text-align: left;
 }
