@@ -1,7 +1,11 @@
 WeatherTwitterProject
 By rachaelecole, denust, dt5513
 -----------------------------
-twittMetData
+Introduction:
+
+The brief of this project was to ingest, blend and analyse forecasted weather data from the MetOffice DataPoint API and Twitter Streaming API to compare the accuracy of MetOffice forecasting to a quantified record of live weather retrieved from the Twitter firehose. The geographical area looked at was London.
+-----------------------------
+twittMetData.csv
 
 Folders:
 Machine Learning
@@ -9,7 +13,7 @@ MetOffice
 python Scripts
 Website
 -----------------------------
-twittMetData
+twittMetData.csv
 
 Weathers were binned according to the following weather categories:
 cloudy, cold, foggy, rain, sunny, windy
@@ -19,7 +23,7 @@ Refer to the Met Office datapoint api reference for more information on units an
 
 Columns:
 [weather category] = The number of words in tweets that are weather-related that belong to that weather-category for that datetime period.
-[weather category]Factor = The [weather category] value divided by the mean of [weather category] value for that time period (equalizes weather values and allows for more fair comparisons).
+[weather category]Factor = The [weather category] value divided by the mean of [weather category] value for that time period (equalizes weather values and allows for more fair comparisons across time periods and weather categories).
 datetime = The format is YYYY-MM-DD-T, where T is the time period as defined by the Met Office. The T*3 returns the hours in T:00 in a 24 hour clock (e.g. T=6 is 18:00).
 Day = The date, for easier aggregations. In YYYY-MM-DD format.
 Temperature[n] = The temperature as given by the Met Office for that datetime period.
@@ -40,7 +44,7 @@ Contains files for machine learning. Machine_Learning_1.py can be used for testi
 
 The initial set of .pickle files (allTweets, classifier, wordFeatures) will classify tweets into weather-related tweets (w) and non-weather-related tweets (n). Beware that these tweets may not be directly related to the current weather.
 
-The .pickle files preceded by wt_ will classify tweets into categories sunny, clouy, snow, rain, foggy, none and forecasts.
+The .pickle files preceded by wt_ will classify tweets into categories sunny, clouy, snow, rain, foggy, none and forecasts. Note, these classifications are not very accurate and require further classifying.
 
 For a better filtering of tweets we recommend filtering out tweets containing 'RT @' as many of these tweets are not relevant to the current weather, or will heavily skew statistics (this is included in the 'Joined DF with factors.ipynb' file found in the Python Scripts folder. )
 -----------------------------
