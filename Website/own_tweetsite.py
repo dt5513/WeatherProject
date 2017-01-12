@@ -23,6 +23,12 @@ def tweetSearch():
     data = [d['text'] + '  |  '+ d['date'].encode('utf-8') for d in data]
     return bottle.template('C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\\tweetSearch.tpl',{'data':data})
 
+@bottle.route('/graphs')
+def tweetGraphs():
+    mythings = ['Darren', 'Rachael', 'Deniss']
+    img = "C:\\Git\\TwittProj\\WeatherTwitterProject\\WeatherTwitterProject\\Website\\img\\cat.gif"
+    return bottle.template('C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\\tweetGraphs.tpl',
+                           {"username": "Darren", "things": mythings, "img": img})
 
 
 
