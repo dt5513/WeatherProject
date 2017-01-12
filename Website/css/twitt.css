@@ -18,9 +18,25 @@
     margin-top: 20%
 }
 
+.TopBarSearch {
+    max-width: 90%;
+    clear:both;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+    padding-bottom: 25px;
+}
+
 ul li {
-    background: #F0F0F0;
-    margin: 5px;
+    background: #F5F5F5;
+    margin: 7px;
+}
+
+.TweetsList{
+    max-width: 94%;
+      margin-left: auto;
+    margin-right: auto;
 }
 
 .formButt2 {

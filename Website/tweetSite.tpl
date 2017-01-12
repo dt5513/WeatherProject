@@ -4,34 +4,23 @@
     
 
     
-<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\common.css">
-<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\normalize.css">
-<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\twitt.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/common.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/normalize.css">
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/twitt.css">
 
 
     
 <title>Tweets Website</title>
 </head>
 <body bgcolor="#ffffff">
+    
 <div class = "TopRight">
     <p> Button</p>
-    
-    </div>
-    
-    
+</div>
     
 <div class = "TopBar">
-
-           
-    
-
-    
-    
-    
-    
     <div class = "TopImg">
         <img src="https://raw.githubusercontent.com/rachaelecole/WeatherTwitterProject/master/Website/img/RITMLogo.png" >
-      
         </div>
 </div> 
 
