@@ -1,6 +1,70 @@
-.TopImg {
-    
-    max-width: 200px;
+.TopRight{
+    float: right;
+    text-align: right; 
+    padding-bottom: 200px;
+}
+.TopRightSearch{
+    float: right;
+    text-align: right; 
+    padding-bottom: 20px;
+}
+
+.TopBar {
+    max-width: 90%;
     clear:both;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%
+}
+
+ul li {
+    background: #F0F0F0;
+    margin: 5px;
+}
+
+.formButt2 {
+    background-color: #F0F0F0;
     
+    border: none;
+    color: #7A7A7A;
+    padding: 8px 26px;
+    text-align: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.TopImg {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formDiv{
+    
+    max-width: 90%;
+    clear:both;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
+.formButt{
+    max-width: 90%;
+    clear:both;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+input[type=text]
+{
+  box-shadow:2px 2px 4px #CFCECE;
+  background: #fff;
+  border: 0.5px solid #F1F1F1;
+    height: 40px;
+    width: 560px;
+    text-align: left;
+    text-indent: 10px;
 }
