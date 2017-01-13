@@ -5,14 +5,13 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/common.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/normalize.css">
-<link rel="stylesheet" type="text/css" href="https://rawgit.com/rachaelecole/WeatherTwitterProject/master/Website/css/twitt.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/0fcf0302/Website/css/twitt.css">
 
  
 <!--<link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\common.css">
 <link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\normalize.css">
 <link rel="stylesheet" type="text/css" href="C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\css\twitt.css">
--->    
-
+-->
     
 <title>Tweet Data</title>
 </head>
@@ -43,9 +42,9 @@
 <div class = "graphsMain">
     
         <div class = "firstRowText">
-            <p>For this project we were given the brief of having to ingest, blend and analyse forecasted weather data from the MetOffice and Twitter to compare the accuracy of MetOffice forecasting to a quantified record of live weather retrieved from the Twitter.  We collected data from the 6th December 2016 to 8th January 2017 in the London region and then used plot.ly to produce graphs to see if there were any relationships.</p><br/><p>
+            <p2>For this project we were given the brief of having to ingest, blend and analyse forecasted weather data from the MetOffice and Twitter to compare the accuracy of MetOffice forecasting to a quantified record of live weather retrieved from the Twitter.  We collected data from the 6th December 2016 to 8th January 2017 in the London region and then used plot.ly to produce graphs to see if there were any relationships.</p2><br/><br/><p2>
             Files and details used in this project can be found at <a href="https://github.com/rachaelecole/WeatherTwitterProject">our repository.</a>
-            </p>
+            </p2>
         </div>
     <div class = "firstRow">
          <div class = "textSqueeze"><p> 
