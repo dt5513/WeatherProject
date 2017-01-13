@@ -18,24 +18,25 @@ def tweetGraphs():
 
 
 @bottle.post('/word')
+
+
+
 def tweetSearch():
+    import pymongo
     import pandas as pd
     import plotly.plotly as py
     import plotly.graph_objs as go
     import plotly.offline as offline
-    import csv
     word = bottle.request.forms.get('word')
-    with open('tweetSearch.csv', 'rb') as csvFile:
-        reader = csv.DictReader(csvFile)
-        data = []
-        initDateList = []
-        for row in reader:
-            if row['date'] not in initDateList:
-                initDateList.append(row['date'])
-            if row['text'].find(word) != -1:
-                data.append(row)
-        textData = [d['text'] for d in data]
-        dateData = [d['date'] for d in data]
+    connection = pymongo.MongoClient('localhost', 27017)
+    db = connection.metoffice
+    collection = db.tweets_rawish
+    data = collection.find({'text': {'$regex': word}}, {'text': 1, '_id': 0, 'date':1})
+    dateList = db.weather_dt.find({}, {'date obtained': 1, '_id': 0})
+    textData = [d['text'] for d in data]
+    data = collection.find({'text': {'$regex': word}}, {'text': 1, '_id': 0, 'date': 1})
+    dateData = [d['date'] for d in data]
+    initDateList = [d['date obtained'] for d in dateList]
     dateDict = {}
     for i in initDateList:
         if i not in dateDict.keys():
@@ -104,6 +105,7 @@ def tweetSearch():
     graph = offline.plot(fig, include_plotlyjs=False, output_type='div')
     graphTemplate = html1 + graph + html2
     return bottle.template(graphTemplate, {'data':textData})
+    #return bottle.template('C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\\tweetSearch.tpl',{'data':textData,'graph':graph})
 
 
 bottle.debug(True)

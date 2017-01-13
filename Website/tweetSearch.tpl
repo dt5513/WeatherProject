@@ -27,7 +27,12 @@
     <div class = "TopImg">
         <a href="http://localhost:8082/"><img src="https://raw.githubusercontent.com/rachaelecole/WeatherTwitterProject/master/Website/img/RITMLogo.png" ></a>
         </div>
-</div>     
+</div>
+    
+<div class = "DynamicGraph">
+    {{graph}}
+    </div>    
+    
 <div class = "TweetsList">
     <ul>    
       %for thing in data:
@@ -35,13 +40,21 @@
     %end
 </ul>
 </div>    
+    
+    
+    
+</body>
+</html>    
+    
+    
+    
+    
 <!--
 <ul>    
     
 </ul>
 -->
-</body>
-</html>
+
 
 <!--
  <li>@BIUK In pics - dense #fog in #FinsburyPark, North #London. #ukweather #foggy https://t.co/D1jVRapOBS https://t.co/zxgufd7d5N | 2016-12-28</li>

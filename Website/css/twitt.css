@@ -1,3 +1,5 @@
+
+
 .TopRight{
     float: right;
     text-align: right; 
@@ -17,17 +19,15 @@
     margin-right: auto;
     margin-top: 20%
 }
-
 .TopBarSearch {
     max-width: 90%;
     clear:both;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20%;
-    padding-bottom: 25px;
+    margin-top: 1%;
+    padding-bottom: 1%;
 }
-
 ul li {
     background: #F5F5F5;
     margin: 7px;
@@ -38,7 +38,6 @@ ul li {
       margin-left: auto;
     margin-right: auto;
 }
-
 .formButt2 {
     background-color: #F0F0F0;
     
@@ -48,24 +47,19 @@ ul li {
     text-align: center;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
-
-
 .graphsButt {
     margin-right: 10px;
     margin-top: 10px;
 }
-
-
 .TopImg {
-    max-width: 1000px;
+    
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 .formDiv{
-    
-    max-width: 90%;
+     max-width: 90%;
     clear:both;
     text-align: center;
     margin-left: auto;
@@ -121,16 +115,28 @@ input[type=text]
 .graphRight{
     float: right;
 }
-.textSqueeze{
-    text-align: center;
-  
-    max-width: 80%;
+.firstRow{
+    clear:both;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 40px;
+    align-content: center;
+}
+.textSqueeze{
+    text-align: left;
+    width: 50%; 
+    padding-top: 10%;
     padding-bottom: 15px;
-    font-size: 17px;
-   
+    font-size: 17px;  
+    float: left;
+}
+.firstGraph{
+    float: right;
+    width: 50%;
+    left: 30%;
+    
+    
+    
 }
 .textSqueeze2{
     text-align: left;
@@ -146,8 +152,8 @@ input[type=text]
 .firstRowText{
     margin-left: auto;
     margin-right: auto;
-    max-width: 60%;
-    text-align: center;
+    max-width: 70%;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -158,4 +164,57 @@ input[type=text]
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    padding-top:540px;
+    max-width:70%
+}
+
+.fourthRow{
+    float: both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top:20px;
+    max-width:70%
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    background-image: url("https://pp.vk.me/c604330/v604330187/455da/hxzFr-BuWUY.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.introText{
+    color: aliceblue;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 60px; 
+    position:absolute;
+    top: 40%;
+    left: 2%;
+    width: 100%;
+    letter-spacing: 5px;
+}
+.introText2{
+    color: aliceblue;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px; 
+    position:absolute;
+    
+   
+    width: 100%;
+    letter-spacing: 5px;
+}
+
+p {
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
 }

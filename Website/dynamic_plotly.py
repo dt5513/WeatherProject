@@ -32,3 +32,5 @@ def dynamic_graphing(word):
     fig = go.Figure(data = data, layout = layout)
     division = offline.plot(fig, include_plotlyjs=False, output_type='div')
     return division
+
+print dynamic_graphing('wind')
