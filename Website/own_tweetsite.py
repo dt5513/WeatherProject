@@ -6,14 +6,14 @@ import bottle
 
 def home_page():
     mythings = ['Darren','Rachael','Deniss']
-    img = "C:\\Git\\TwittProj\\WeatherTwitterProject\\WeatherTwitterProject\\Website\\img\\cat.gif"
-    return bottle.template('C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\\tweetSite.tpl',{"username":"Darren","things":mythings, "img":img})
+    img = "https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/img/cat.gif"
+    return bottle.template('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetSite.tpl',{"username":"Darren","things":mythings, "img":img})
 
 @bottle.route('/graphs')
 def tweetGraphs():
     mythings = ['Darren', 'Rachael', 'Deniss']
-    img = "C:\\Git\\TwittProj\\WeatherTwitterProject\\WeatherTwitterProject\\Website\\img\\cat.gif"
-    return bottle.template('C:\Git\TwittProj\WeatherTwitterProject\WeatherTwitterProject\Website\\tweetGraphs.tpl',
+    img = "https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/img/cat.gif"
+    return bottle.template('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetGraphs.tpl',
                            {"username": "Darren", "things": mythings, "img": img})
 
 
