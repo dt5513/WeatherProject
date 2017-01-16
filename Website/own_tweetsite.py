@@ -1,19 +1,23 @@
 import pymongo
 import bottle
-
+import urllib2
 
 @bottle.route('/')
 
 def home_page():
     mythings = ['Darren','Rachael','Deniss']
     img = "https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/img/cat.gif"
-    return bottle.template('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetSite.tpl',{"username":"Darren","things":mythings, "img":img})
+    link = urllib2.urlopen('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetSite.tpl')
+    template = '\n'.join([l for l in link])
+    return bottle.template(template,{"username":"Darren","things":mythings, "img":img})
 
 @bottle.route('/graphs')
 def tweetGraphs():
     mythings = ['Darren', 'Rachael', 'Deniss']
     img = "https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/img/cat.gif"
-    return bottle.template('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetGraphs.tpl',
+    link = urllib2.urlopen('https://cdn.rawgit.com/rachaelecole/WeatherTwitterProject/cbccaf1d/Website/tweetGraphs.tpl')
+    template = '\n'.join([l for l in link])
+    return bottle.template(template,
                            {"username": "Darren", "things": mythings, "img": img})
 
 
