@@ -8,6 +8,7 @@ The brief of this project was to ingest, blend and analyse forecasted weather da
 More information can be found at:
 http://kubrickgroup.com/2017/01/19/kubrick-group-twitter-weather-project/
 https://github.com/rachaelecole/WeatherTwitterProject
+https://plot.ly/dashboard/rachaelecole:49/view
 -----------------------------
 twittMetData.csv
 
