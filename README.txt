@@ -4,6 +4,10 @@ By rachaelecole, denust, dt5513
 Introduction:
 
 The brief of this project was to ingest, blend and analyse forecasted weather data from the MetOffice DataPoint API and Twitter Streaming API to compare the accuracy of MetOffice forecasting to a quantified record of live weather retrieved from the Twitter firehose. The geographical area looked at was London.
+
+More information can be found at:
+http://kubrickgroup.com/2017/01/19/kubrick-group-twitter-weather-project/
+https://github.com/rachaelecole/WeatherTwitterProject
 -----------------------------
 twittMetData.csv
 
@@ -46,7 +50,7 @@ The initial set of .pickle files (allTweets, classifier, wordFeatures) will clas
 
 The .pickle files preceded by wt_ will classify tweets into categories sunny, clouy, snow, rain, foggy, none and forecasts. Note, these classifications are not very accurate and require further classifying.
 
-For a better filtering of tweets we recommend filtering out tweets containing 'RT @' as many of these tweets are not relevant to the current weather, or will heavily skew statistics (this is included in the 'Joined DF with factors.ipynb' file found in the Python Scripts folder. )
+For a better filtering of tweets we recommend filtering out tweets containing 'RT @' as many of these tweets are not relevant to the current weather, or will heavily skew statistics (this is included in the 'Joined DF with factors.ipynb' file found in the Python Scripts folder.)
 -----------------------------
 MetOffice
 
@@ -59,5 +63,10 @@ Also contains .py scripts to take tweets from twitter, and to insert .pickle fil
 -----------------------------
 Website
 
-Contains files for creating a website for the project to display the work. The website is assembled using the bottle module in python, and can be run by using the .py file to assemble the .tpl templates for the website. 
+Contains files for creating a website for the project to display the work. The website is assembled using the bottle module in python, and can be run by using the .py file to assemble the .tpl templates for the website. The website can be run by using own_tweetsite.py file.
+-----------------------------
+Plot.ly
+
+We obtained statistics by performing a series of calculations in plotly. We modelled the data into data frames using the Pandas module,
+followed by the plot.ly module to produce graphs. Graphs of varying types were plotted to find any correlations or relationships between the data, and they were also tailored to be appealing to the eye and presentable.
 -----------------------------
